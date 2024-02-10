@@ -29,13 +29,15 @@ class CardItem extends StatelessWidget {
             Text(
               "Batako Kotak Biasa",
               style: TextStyle(
-                  fontWeight: FontWeight.w600,
+                fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w500,
                   fontSize: 16,
                   color: Color(0xFF202224)),
             ),
             Text(
               'Bata | Stok : 40',
               style: TextStyle(
+                fontFamily: 'Poppins',
                 fontSize: 12,
               ),
             ),
@@ -45,6 +47,7 @@ class CardItem extends StatelessWidget {
             Text(
               'Rp. 2.000',
               style: TextStyle(
+                fontFamily: 'Poppins',
                 color: Color(0xFF389D42),
                 fontWeight: FontWeight.bold,
                 fontSize: 14,

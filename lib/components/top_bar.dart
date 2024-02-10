@@ -24,7 +24,10 @@ class TopBar extends StatelessWidget {
         Flexible(
           flex: 1,
           fit: FlexFit.tight,
-          child: Text(title),
+          child: Text(title, style: const TextStyle(
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.w500
+          ),),
         ),
         rightIcon != null ? rightIcon! : Container()
       ],
