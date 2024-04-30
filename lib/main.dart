@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'package:sarpras_app/pages/cart.dart';
 import 'package:sarpras_app/pages/home.dart';
 import 'package:sarpras_app/providers/home_provider.dart';
 
@@ -25,7 +26,14 @@ class MyApp extends StatelessWidget {
             create: (context) => HomeProvider()),
       ],
       child: MaterialApp(
-          title: 'Kasirrr', debugShowCheckedModeBanner: false, home: Home()),
+        title: 'Kasirrr',
+        debugShowCheckedModeBanner: false,
+        home: Home(),
+        routes: <String, WidgetBuilder>{
+          '/home': (context) => Home(),
+          '/cart': (context) => const Cart()
+        },
+      ),
     );
   }
 }

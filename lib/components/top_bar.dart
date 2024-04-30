@@ -17,20 +17,26 @@ class TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.max,
-      children: [
-        leftIcon,
-        Flexible(
-          flex: 1,
-          fit: FlexFit.tight,
-          child: Text(title, style: const TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w500
-          ),),
-        ),
-        rightIcon != null ? rightIcon! : Container()
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        vertical: 5,
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          leftIcon,
+          Flexible(
+            flex: 1,
+            fit: FlexFit.tight,
+            child: Text(
+              title,
+              style: const TextStyle(
+                  fontFamily: 'Poppins', fontWeight: FontWeight.w500),
+            ),
+          ),
+          rightIcon != null ? rightIcon! : Container()
+        ],
+      ),
     );
   }
 }
